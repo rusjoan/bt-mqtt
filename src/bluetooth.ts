@@ -8,7 +8,7 @@ async function redmondSocket(mac: string, command: string): Promise<string> {
     mutex.acquire().then(release => {
       try {
         console.debug('redmondSocket >', mac, command);
-        const result = execSync(`/home/pi/redmond/rsp100s.sh ${mac} ${command}`);
+        const result = execSync(`./rsp100s.sh ${mac} ${command}`);
         console.debug('redmondSocket <', result.toString());
         resolve(result.toString());
       } catch (e) {
