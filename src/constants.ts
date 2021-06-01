@@ -1,6 +1,7 @@
 import {BtDeviceInfoMap, BtDeviceType} from "./types";
+const pkg = require('../package.json');
 
-const version = 'bt-mqtt 0.0.1';
+const version = `${pkg.name}@${pkg.version}`;
 
 const deviceModels: BtDeviceInfoMap = {
   [BtDeviceType.redmond_socket]: {
