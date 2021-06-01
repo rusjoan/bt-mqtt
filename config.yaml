@@ -1,0 +1,6 @@
+mqtt_connection: mqtt://raspberrypi.local:1883
+devices:
+  radiator:
+    pretty_name: Радиатор
+    mac: D4:E2:99:E3:AC:FF
+    type: redmond_socket
